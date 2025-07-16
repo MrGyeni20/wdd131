@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about the beautiful Hawaiian islands, climate, and the best time to visit." />
+  <title>Explore Hawaii | Travel Guide & Climate Info</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Hawaii</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/Hawaii-view-optimized.webp" media="(min-width: 768px)" />
+        <img src="images/Hawaii-view-small-optimized.webp" alt="Scenic view of Hawaii coastline and mountains" />
+      </picture>
+    </section>
+
+    <section class="content">
+      <h2>About Hawaii</h2>
+      <p>Hawaii is the 50th state of the United States, located in the central Pacific Ocean. It’s an archipelago made up of 137 islands, with eight main ones — the most famous being Oʻahu, Maui, Kauaʻi, and Hawaiʻi (the Big Island). Known for its tropical climate, volcanic landscapes, beautiful beaches, and rich native Hawaiian culture, Hawaii is a major tourist destination. Visitors enjoy their vacations at Waikiki Beach, Lanikai Beach, and Hawaiʻi Volcanoes National Park. The best time to visit is between April and June, or September and November, when there are fewer crowds, good weather, and lower prices.</p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <p>Temperature: <span id="temp">45</span>°F</p>
+      <p>Wind Speed: <span id="speed">5</span> mph</p>
+      <p>Wind Chill: <span id="chill">--</span></p>
+      <img class="icon-small" src="images/sunny-emoticon.svg" alt="Weather icon for partly cloudy" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+  </footer>
+</body>
+</html>
