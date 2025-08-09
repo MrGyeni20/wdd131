@@ -1,0 +1,262 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #d00027;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffe600;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero,
+.players-hero,
+.trophy-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f2f2f2;
+}
+
+.hero img,
+.players-hero img,
+.trophy-hero img {
+  margin-top: 1rem;
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 0;
+  background-color: #fafafa;
+}
+
+.about h2 {
+  color: #d00027;
+}
+
+/* Quick Links */
+.quick-links {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #d00027;
+  margin-bottom: 0.5rem;
+}
+
+/* Players Grid */
+.players-container {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.players-container h2 {
+  text-align: center;
+  color: #d00027;
+  margin-bottom: 2rem;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.player-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.player-info {
+  padding: 1rem;
+}
+
+.player-info h3 {
+  color: #d00027;
+  margin-bottom: 0.5rem;
+}
+
+/* Legends Section */
+.legends-container- {
+  padding: 2rem 1rem;
+  background-color: #fafafa;
+}
+
+.legends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.legend-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.legend-card h3 {
+  color: #d00027;
+  margin: 0.5rem 0;
+}
+
+/* Coach Cards */
+.coach-card {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border-left: 5px solid #d00027;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.coach-card h3 {
+  color: #d00027;
+  margin-bottom: 1rem;
+}
+
+.coach-card figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.coach-card img {
+  border-radius: 10px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.coach-card figcaption {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #d00027;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    background-color: #d00027;
+    padding: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 80px;
+    width: 200px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .cards,
+  .player-grid,
+  .legends-grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .coach-card {
+    padding: 1rem 0.5rem;
+  }
+}
