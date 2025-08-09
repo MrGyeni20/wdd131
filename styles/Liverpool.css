@@ -260,3 +260,60 @@ footer {
     padding: 1rem 0.5rem;
   }
 }
+
+.fan-form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 2px solid #d00000; /* Liverpool red */
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.fan-form h2 {
+  color: #d00000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fan-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.fan-form input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.fan-form button {
+  width: 100%;
+  background-color: #d00000;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fan-form button:hover {
+  background-color: #a50000;
+}
+
+#formMessage, #userGreeting {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
